@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>NYT Article Search</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        .jumbotron {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 4rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            color: white;
+            background: blue;
+        }
+
+        .nytContainer {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            text-align: left;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-bottom: 4rem;
+            color: black;
+            background: transparent;
+        }
+        #topArticles {
+            margin-top: 2rem;  
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Using Bootstrap jumbotron for header -->
+    <header class="jumbotron">
+        <h1 class="display-4">New York Times Search</h1>
+    </header>
+
+    <main class="nytContainer">
+        <p><b>Search Parameters</b></p>
+
+        <form>
+            <div id="searchTerm" class="form-group">
+                <label for="search">Search Term:</label>
+                <input type="text" class="form-control" id="search">
+            </div>
+
+            <div id="noRecords" class="form-group">
+                <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div id="startYear" class="form-group">
+                <label for="search">Start Year (Optional):</label>
+                <input type="text" class="form-control" id="search">
+            </div>
+
+            <div id="endYear" class="form-group">
+                <label for="search">End Year (Optional):</label>
+                <input type="text" class="form-control" id="search">
+            </div>
+
+            <div>
+                <button id="search"> Search </button>
+                <button id="search"> Clear Results </button>
+            </div>
+            <div id="topArticles">
+                <p><b>Top Articles</b></p>
+            </div>
+        </form>
+        
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+// API search code goes here
+
+
+        </script>
+        </div>
+</body>
+
+</html>
