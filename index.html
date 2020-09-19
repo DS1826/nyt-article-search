@@ -102,7 +102,10 @@
                 var startYear = $("#startYear").val();
                 var endYear = $("#endYear").val();
                 console.log(searchTerm, recordNo, startYear, endYear);
-                var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&api-key=KmEYgA8mbBr5PUZl91oibAHBIOjdtkYG"
+                
+                var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&facet_fields=source&facet=true&begin_date=" + startYear + "0101&end_date=" + endYear + "1231" + "&api-key=KmEYgA8mbBr5PUZl91oibAHBIOjdtkYG"
+
+                
                 $.ajax({
                     url: queryURL,
                     method: "GET"
